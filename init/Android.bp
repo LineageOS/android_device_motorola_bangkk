@@ -9,3 +9,10 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.nfc.sec.rc",
+    src: "init.nfc.sec.rc",
+    sub_dir: "init",
+    vendor: true,
+}
