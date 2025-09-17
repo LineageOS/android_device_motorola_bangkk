@@ -31,9 +31,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc': blob_fixup()
-        .regex_replace('sec', 'samsung')
-        .regex_replace('class hal\n    user nfc', 'override\n    class hal\n    user nfc'),
     'vendor/lib64/libBSTSWAD.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
