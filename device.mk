@@ -50,14 +50,15 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mmi.overlay.rc
+    init.mmi.overlay.rc \
+    init.nfc.sec.rc
 
 # LiveDisplay
 $(call soong_config_set,livedisplay_sysfs,enable_af,true)
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung \
+    android.hardware.nfc-service.sec \
     com.android.nfc_extras \
     Tag
 
