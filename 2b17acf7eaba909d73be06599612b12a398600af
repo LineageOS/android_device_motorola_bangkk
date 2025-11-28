@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efbcb276_3f7ff641",
+        "filename": "init/init.nfc.sec.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-11-28T10:53:45Z",
+      "side": 1,
+      "message": "enable?\nyou can drop `on boot` and it should automatically start the service only when needed",
+      "range": {
+        "startLine": 2,
+        "startChar": 4,
+        "endLine": 2,
+        "endChar": 9
+      },
+      "revId": "2b17acf7eaba909d73be06599612b12a398600af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
