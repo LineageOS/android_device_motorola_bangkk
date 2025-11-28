@@ -22,6 +22,30 @@
       },
       "revId": "2b17acf7eaba909d73be06599612b12a398600af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e655f2e_5fa25349",
+        "filename": "init/init.nfc.sec.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-11-28T11:07:59Z",
+      "side": 1,
+      "message": "Well that\u0027s what stock does (and every motorola device on lineage) so that should be a separate commit",
+      "parentUuid": "efbcb276_3f7ff641",
+      "range": {
+        "startLine": 2,
+        "startChar": 4,
+        "endLine": 2,
+        "endChar": 9
+      },
+      "revId": "2b17acf7eaba909d73be06599612b12a398600af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
