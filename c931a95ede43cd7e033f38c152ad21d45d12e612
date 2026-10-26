@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f66da966_75558583",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-10-26T14:56:59Z",
+      "side": 1,
+      "message": "Blob pull https://github.com/elginsk8r/proprietary_vendor_motorola_bangkk/commits/lineage-24.0/",
+      "revId": "c931a95ede43cd7e033f38c152ad21d45d12e612",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
