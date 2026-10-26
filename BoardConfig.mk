@@ -11,6 +11,9 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bangkk
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # HIDL
 ODM_MANIFEST_SKUS += b d de dn n
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
