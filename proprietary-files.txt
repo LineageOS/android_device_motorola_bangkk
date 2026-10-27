@@ -42,6 +42,8 @@ vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAncFaceDetect.so
 vendor/lib64/libancbase_fd.so
 vendor/lib64/libBSTSWAD.so
+vendor/lib64/libaidenoiser.so
+vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
@@ -59,6 +61,7 @@ vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxifestriping.so
 vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxstatscore.so
@@ -67,7 +70,10 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libipebpsstriping.so
+vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
+vendor/lib64/liblowlight_ai_portrait.arcsoft.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
@@ -85,6 +91,9 @@ vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
 vendor/lib64/libopestriping.so
+vendor/lib64/libportrait_repair_ppl3_ocl.so
+vendor/lib64/libqll10.so
+vendor/lib64/libqllengine.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
