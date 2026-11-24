@@ -11,7 +11,7 @@
     <dimen name="keyguard_carrier_text_margin">4dp</dimen>
 
     <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">8dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">15dp</dimen>
 
     <!--  Total minimum padding to enforce to ensure that the dot can always show  -->
     <dimen name="ongoing_appops_dot_min_padding">14dp</dimen>
