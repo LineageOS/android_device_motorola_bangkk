@@ -30,7 +30,7 @@ public class BangkkCameraService extends Service {
     private static final boolean DEBUG = false;
     private static final String TAG = "BangkkCameraService";
 
-    private static final String FRONT_CAMERA_ID = "1";
+    private static final String BACK_CAMERA_ID = "0";
     private static final int OFFENDING_NR_BAND = 78;
 
     private CameraManager mCameraManager;
@@ -38,7 +38,7 @@ public class BangkkCameraService extends Service {
     private TelephonyManager mTelephonyManager;
     private QcRilMsgUtils mQcRilMsgUtils;
 
-    private boolean mIsFrontCamInUse = false;
+    private boolean mIsBackCamInUse = false;
     private int[] mActiveSubIds = new int[0];
     private int mDefaultDataSubId = INVALID_SUBSCRIPTION_ID;
 
@@ -50,8 +50,8 @@ public class BangkkCameraService extends Service {
         @Override
         public void onCameraAvailable(String cameraId) {
             dlog("onCameraAvailable id:" + cameraId);
-            if (cameraId.equals(FRONT_CAMERA_ID)) {
-                mIsFrontCamInUse = false;
+            if (cameraId.equals(BACK_CAMERA_ID)) {
+                mIsBackCamInUse = false;
                 update5gState();
             }
         }
@@ -59,8 +59,8 @@ public class BangkkCameraService extends Service {
         @Override
         public void onCameraUnavailable(String cameraId) {
             dlog("onCameraUnavailable id:" + cameraId);
-            if (cameraId.equals(FRONT_CAMERA_ID)) {
-                mIsFrontCamInUse = true;
+            if (cameraId.equals(BACK_CAMERA_ID)) {
+                mIsBackCamInUse = true;
                 update5gState();
             }
         }
@@ -141,11 +141,11 @@ public class BangkkCameraService extends Service {
             return;
         }
         if (mQcRilMsgUtils.setNrBandEnabled(mSubManager.getPhoneId(mDefaultDataSubId),
-                OFFENDING_NR_BAND, !mIsFrontCamInUse)) {
-            Log.i(TAG, (mIsFrontCamInUse ? "Disabled" : "Enabled") + " NR band "
+                OFFENDING_NR_BAND, !mIsBackCamInUse)) {
+            Log.i(TAG, (mIsBackCamInUse ? "Disabled" : "Enabled") + " NR band "
                     + OFFENDING_NR_BAND + " for subId " + mDefaultDataSubId);
         } else {
-            Log.e(TAG, "Failed to " + (mIsFrontCamInUse ? "disable" : "enable") + " NR band "
+            Log.e(TAG, "Failed to " + (mIsBackCamInUse ? "disable" : "enable") + " NR band "
                     + OFFENDING_NR_BAND + " for subId " + mDefaultDataSubId);
         }
     }
