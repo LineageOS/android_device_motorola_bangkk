@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.arrow.dubaicameraservice"
+    package="com.arrow.bangkkcameraservice"
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -13,7 +13,7 @@
     <uses-permission android:name="com.qualcomm.permission.USE_QCRIL_MSG_TUNNEL" />
 
     <application
-        android:label="DubaiCameraService"
+        android:label="BangkkCameraService"
         android:persistent="true">
 
         <receiver
@@ -25,8 +25,8 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".DubaiCameraService"
-            android:permission="DubaiCameraService"
+        <service android:name=".BangkkCameraService"
+            android:permission="BangkkCameraService"
             android:exported="false">
         </service>
 

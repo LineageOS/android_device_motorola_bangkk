@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.arrow.dubaicameraservice;
+package com.arrow.bangkkcameraservice;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -20,7 +20,7 @@ import java.nio.ByteOrder;
 
 public class QcRilMsgUtils {
 
-    private static final String TAG = "DubaiCameraService-QcRil";
+    private static final String TAG = "BangkkCameraService-QcRil";
 
     private static final String PACKAGE_NAME = "com.qualcomm.qcrilmsgtunnel";
     private static final String SERVICE_NAME = "com.qualcomm.qcrilmsgtunnel.QcrilMsgTunnelService";
@@ -164,6 +164,6 @@ public class QcRilMsgUtils {
     }
 
     private static void dlog(String msg) {
-        DubaiCameraService.dlog(msg);
+        BangkkCameraService.dlog(msg);
     }
 }

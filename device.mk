@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    DubaiCameraService
+    BangkkCameraService
 
 # Fingerprint
 PRODUCT_PACKAGES += \

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.arrow.dubaicameraservice;
+package com.arrow.bangkkcameraservice;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -16,6 +16,6 @@ public class BootReceiver extends BroadcastReceiver {
         if (!intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED))
             return;
 
-        DubaiCameraService.startService(context);
+        BangkkCameraService.startService(context);
     }
 }

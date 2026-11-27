@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.arrow.dubaicameraservice;
+package com.arrow.bangkkcameraservice;
 
 import static android.telephony.SubscriptionManager.INVALID_SUBSCRIPTION_ID;
 
@@ -25,10 +25,10 @@ import android.util.Log;
 import java.util.Arrays;
 import java.util.concurrent.Executor;
 
-public class DubaiCameraService extends Service {
+public class BangkkCameraService extends Service {
 
     private static final boolean DEBUG = false;
-    private static final String TAG = "DubaiCameraService";
+    private static final String TAG = "BangkkCameraService";
 
     private static final String FRONT_CAMERA_ID = "1";
     private static final int OFFENDING_NR_BAND = 78;
@@ -130,7 +130,7 @@ public class DubaiCameraService extends Service {
 
     public static void startService(Context context) {
         Log.i(TAG, "Starting service");
-        context.startServiceAsUser(new Intent(context, DubaiCameraService.class),
+        context.startServiceAsUser(new Intent(context, BangkkCameraService.class),
                 UserHandle.CURRENT);
     }
 

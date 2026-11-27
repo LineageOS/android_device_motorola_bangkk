@@ -4,7 +4,7 @@
 //
 
 android_app {
-    name: "DubaiCameraService",
+    name: "BangkkCameraService",
     srcs: [
         "src/**/*.java",
         "src/**/*.aidl",
@@ -13,12 +13,12 @@ android_app {
     platform_apis: true,
     privileged: true,
     system_ext_specific: true,
-    required: ["privapp-permissions-dubaicameraservice.xml"],
+    required: ["privapp-permissions-bangkkcameraservice.xml"],
 }
 
 prebuilt_etc {
-    name: "privapp-permissions-dubaicameraservice.xml",
-    src: "privapp-permissions-dubaicameraservice.xml",
+    name: "privapp-permissions-bangkkcameraservice.xml",
+    src: "privapp-permissions-bangkkcameraservice.xml",
     system_ext_specific: true,
     sub_dir: "permissions",
 }
